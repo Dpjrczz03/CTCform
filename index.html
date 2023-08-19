@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Council Of Civil</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200&display=swap" rel="stylesheet">
+
+    <style>
+        body{
+             background: linear-gradient(to right,rgb(42, 42, 66),rgb(89, 89, 133),rgb(42, 42, 66))
+        }
+        h1{
+            letter-spacing: 8px;
+            margin-top: 20px;
+            margin-bottom: 30px;
+            color: white;
+            font-family: 'Barlow Condensed', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        form div{
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            justify-content: flex-end;
+
+        }
+
+        input,select {
+            transition: 0.7s;
+            padding-left: 10px;
+            padding-right: 5px;
+            color: white;
+            background-color: rgb(121, 121, 169);
+            border-style: solid;
+            border-width: 2.5px;
+            /* border-color: rgb(78, 78, 255); */
+            border-color: white;
+            border-radius: 25px;
+            margin-top: 10px;
+            margin-bottom: 20px;
+            height: 2em;
+            width: 300px;
+
+        }
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+        }
+        select{
+            height: 33px;
+            width: 320px;
+            padding-left: 10px;
+            padding-right: 10px;
+
+        }
+        button{
+            border-color: white;
+            margin-top: 10px;
+            font-size: 1.2em;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            border-width: 1px;
+            border-style: solid;
+            padding-left: 15px;
+            padding-right: 15px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            border-radius: 15px;
+            color: rgb(95, 95, 145);
+            background-color: rgb(255, 255, 255);
+            font-weight: bolder;
+            transition: 0.3s;
+        }
+        button:hover{
+            background-color: rgb(121, 121, 169);
+            color: rgb(255, 255, 255);
+            cursor: pointer;
+            padding-left: 16px;
+            padding-right: 16px;
+            padding-top: 6px;
+            padding-bottom: 6px;
+            margin-top: 9px;
+            border-color: rgb(121, 121, 169);
+        }
+        hr{
+            border-style: dotted;
+            border-width: 10.5px;
+            border-bottom-style: none;
+            border-color: white;
+            margin-left: 47%;
+            margin-right: 47%;
+            margin-bottom: 30px;
+
+        }
+        option{
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div>
+        <h1>
+            Technical Council Of Civil
+        </h1>
+
+        <hr>
+
+    </div>
+    <div class="form">
+
+        <form  accept-charset='UTF-8' action="https://getform.io/f/c48d7f53-eb8f-489d-a14d-83907fe7fa2e" method="POST" action="" onsubmit="validate()">
+            <div class="Username">
+            Name: <input type="text" name="name" id="username" width="100">
+            </div>
+
+            <div class="Email">
+            Email Address: <input type="email" name="email" id="email">
+            </div>
+            <div class="Phone">
+            Enrollment Number: <input type="number" name="enrol" id="enr" maxlength="8">
+            </div>
+            <div class="Phone">
+            Mobile Number: <input type="number" name="mob" id="enr" maxlength="8">
+            </div>
+            <div class="intr">
+                Technical field interested in? <select name="interest" id="interest">
+                    <option value="Competitive Programming">Competitive Programming</option>
+                    <option value="Data Analytics">Data Analytics</option>
+                    <option value="Quantitative finance">Quantitative finance</option>
+                    <option value="Consultancy">Consultancy</option>
+                    <option value="Web And App Development">Web And App Development</option>
+                    <option value="UI/UX Design">UI/UX Design</option>
+                </select>
+                </div>
+            <div>
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
